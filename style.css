@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: white; */
+}
+
+button {
+    background-color: transparent;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(0, 87, 92); */
+    background-image: linear-gradient(to right , rgb(67,124,205) , rgb(67, 235, 210));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 60rem;
+    height: 70vh;
+    background-color: whitesmoke;
+    display: flex;
+    overflow: hidden;
+    border-radius: 2rem;
+    padding: 2rem;
+    animation: fadein 800ms ease-in ;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.103);
+}
+
+.container .log-in,
+.container .wrapper {
+    width: 30rem;
+    transition: 800ms;
+}
+
+
+
+/*              L O G - I N           S E C T I O N         S T A R T I N G              */
+
+ .log-in {
+    padding: 3rem 5rem;
+    font-family: 'Open Sans', sans-serif;
+    /* overflow-x: hidden; */
+    z-index: 1;
+}
+
+.welcome h2 {
+    font-size: 2rem;
+}
+
+.welcome p {
+    font-size: .7rem;
+}
+
+.welcome .sign-up-redirect {
+    font-size: .7rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    /* display: none; */
+}
+
+.welcome .sign-up-redirect2 {
+    font-size: .7rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    display: none;
+}
+
+.inputs {
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+.inputs label {
+    font-size: .7rem;
+    color: gray;
+    position: absolute;
+    /* display: none; */
+    margin-top: 1.7rem;
+    margin-left: .5rem;
+    transition: 400ms;
+    cursor: text;
+}
+
+.inputs input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(89, 53, 89);
+    margin-bottom: 1rem;
+    outline: none;
+    padding: .2rem .5rem;
+}
+.sign-in {
+    margin-top: 1rem;
+}
+
+.sign-in .sign-in-btn {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 2.3rem;
+    border-radius: .5rem;
+    transition: 500ms;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+.sign-in .sign-in-btn:hover {
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+}
+
+.container .log-in .sign-in p,
+a {
+    color: gray;
+}
+
+
+/*              L O G - I N           S E C T I O N         E N D I N G              */
+
+.wrapper {
+    background-image: url('https://web-eau.net/images/svg/undraw_static_assets.svg');
+    background-position: center;
+    background-size: 28rem;
+    background-color: white;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.103);
+    z-index: 2;
+}
+
+.sign-up {
+    /* background-color: chocolate; */
+    width: 0;
+    /* padding: 3rem 5rem; */
+    font-family: 'Open Sans', sans-serif;
+    z-index: 1;
+    transform: translateX(-15rem);
+    transition: 800ms;
+}
+
+#forgot-pass2{
+    display: none;
+}
+
+.inputs2{
+    margin-top: .5rem;
+}
+
+@keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+
+}
+@media screen and (max-width:950px) {
+    body {
+        height: 150vh;
+    }
+
+   .container {
+        width: 22rem;
+        height: 50rem;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+   .log-in,
+   .wrapper,
+   .sign-up{
+        width: 22rem;
+        height: 25rem;
+        overflow: hidden;
+    }
+    
+    .wrapper{
+        width: 9rem;
+        background-size: 15rem;
+    }
+
+    /*              L O G - I N           S E C T I O N         S T A R T I N G              */
+    .welcome h2 {
+        font-size: 1.7rem;
+    }
+
+    .welcome p {
+        font-size: .6rem;
+    }
+
+    .inputs{
+        margin-top: 1.5rem;
+    }
+
+    .sign-up-redirect{
+        display: none;
+    }
+    .welcome p{
+        display: flex;
+        gap: 3px;
+    }
+    .welcome .sign-up-redirect2{
+        display: block;
+    }
+    .inputs2{
+        margin: 0;
+    }
+    a{
+        /* font-size: .1rem; */
+    }
+}
