@@ -11,14 +11,15 @@ button {
     background-color: transparent;
 }
 
-body {
-    width: 100vw;
+.main-container{
+    width:100%;
     height: 100vh;
     /* background-color: rgb(0, 87, 92); */
     background-image: linear-gradient(to right , rgb(67,124,205) , rgb(67, 235, 210));
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .container {
@@ -99,7 +100,6 @@ body {
     margin-bottom: 1rem;
     outline: none;
     padding: .2rem .5rem;
-    border-radius : 0;
 }
 .sign-in {
     margin-top: 1rem;
@@ -170,8 +170,8 @@ a {
 
 }
 @media screen and (max-width:950px) {
-    body {
-        height: 65rem;
+    .main-container {
+        height: 60rem;
     }
 
    .container {
@@ -195,7 +195,7 @@ a {
     }
 
     .sign-up{
-        transform: translateY(15rem);
+        /* transform: translateY(25rem); */
     }
 
     /*              L O G - I N           S E C T I O N         S T A R T I N G              */
@@ -229,9 +229,9 @@ a {
     }
 }
 
-/* @media screen and (max-height:650px) {
+/* @media screen and (max-height:650px)  (max-width : 1500px) {
     .container{
-        padding-top: 0;
+        padding: 0 2rem;
         overflow-x: hidden;
     }
 
@@ -239,4 +239,3 @@ a {
         margin: 1.5rem;
     }
 } */
-
