@@ -52,7 +52,7 @@ signUpRedirectWidth2.addEventListener('click' , ()=>{
     signUp.style.width = '0';
     signUp.style.display = 'fixed';
     document.getElementById('forgot-pass2').style.display = 'none'
-    document.getElementById('sign-up-btn').style.display = 'none'
+//     document.getElementById('sign-up-btn').style.display = 'none'
     
     document.title = 'Sign In'
     document.getElementById('forgot-pass').style.display = 'block'
@@ -70,7 +70,7 @@ signInRedirectHeight2.addEventListener('click' , ()=>{
     signUp.style.height = '0';
     signUp.style.display = 'fixed';
     document.getElementById('forgot-pass2').style.display = 'none'
-    document.getElementById('sign-up-btn').style.display = 'none'
+//     document.getElementById('sign-up-btn').style.display = 'none'
     
     document.title = 'Sign In'
     document.getElementById('forgot-pass').style.display = 'block'
