@@ -34,7 +34,7 @@ let signUp = document.getElementById('sign-up-section');
 signUpRedirectWidth.addEventListener('click' , ()=>{
 
     logIn.style.padding = '3rem 0 ';
-    logIn.style.transform = 'TranslateX(15rem)';
+    logIn.style.transform = 'TranslateX(25rem)';
     logIn.style.width = '0';
     logIn.style.display = 'fixed';
     document.getElementById('forgot-pass').style.display = 'none'
