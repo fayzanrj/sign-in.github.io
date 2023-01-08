@@ -229,7 +229,7 @@ a {
     }
 }
 
-@media screen and (max-height:670px) {
+@media screen and (max-height:650px) {
     .container{
         padding: 0 2rem;
         overflow-x: hidden;
