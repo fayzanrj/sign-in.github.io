@@ -9,44 +9,47 @@
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 </head>
 <body>
-        <div class="container">
-            <div class="log-in" id="log-in-section">
-                <div class="welcome">
-                    <h2>Welcome Back</h2>
-                    <span><p class="register">Not Registered yet? <button class="sign-up-redirect" id="sign-up-redirect">Sign Up</button><button class="sign-up-redirect2" id="sign-up-redirect2"> Sign Up</button></p>
-                    </span>    
-                    <div class="inputs">
-                        <label for="username" id="label1">Username</label><br>
-                        <input type="text" name="username" id="username" onfocus="labelTransition()" ><br>
-                        <label for="password" id="label2" >Password</label><br>
-                        <input type="password" id="password" onfocus="labelTransition2()"  >
+        <div class="main-container">
+            <div class="container">
+                <div class="log-in" id="log-in-section">
+                    <div class="welcome">
+                        <h2>Welcome Back</h2>
+                        <span><p class="register">Not Registered yet? <button class="sign-up-redirect" id="sign-up-redirect">Sign Up</button><button class="sign-up-redirect2" id="sign-up-redirect2"> Sign Up</button></p>
+                        </span>    
+                        <div class="inputs">
+                            <label for="username" id="label1">Username</label><br>
+                            <input type="text" name="username" id="username" onfocus="labelTransition()" ><br>
+                            <label for="password" id="label2" >Password</label><br>
+                            <input type="password" id="password" onfocus="labelTransition2()"  >
+                        </div>
+                        <div class="sign-in">
+                            <button class="sign-in-btn">Sign in</button>
+                            <p id="forgot-pass">Forgotten your password or log in details?<a href="#">Get Help </a>signing in</p>
+                        </div>
                     </div>
-                    <div class="sign-in">
-                        <button class="sign-in-btn">Sign in</button>
-                        <p id="forgot-pass">Forgotten your password or log in details?<a href="#">Get Help </a>signing in</p>
+                </div>
+                <div class="wrapper" id="wrapper"></div>
+                <div class="sign-up" id="sign-up-section">
+                    <div class="welcome">
+                        <h2>Get Started</h2>
+                        <span><p class="register">Already have an account? <button class="sign-up-redirect" id="sign-in-redirect">Sign In</button><button class="sign-up-redirect2" id="sign-in-redirect2">Sign In</button></p>
+                        </span>    
+                        <div class="inputs inputs2">
+                            <label for="username" id="label1-2">Username</label><br>
+                            <input type="text" name="username2" id="username2" onfocus="labelTransition_1()" ><br>
+                            <label for="e-mail" id="e-mail_label">E-mail</label><br>
+                            <input type="e-mail" id="e-mail" onfocus=" labelTransition_3()"><br>
+                            <label for="password" id="label2-2" >Password</label><br>
+                            <input type="password" id="password2" onfocus="labelTransition_2()"  >
+                        </div>
+                        <div class="sign-in">
+                            <button class="sign-in-btn " id="sign-up-btn">Sign Up</button>
+                            <p id="forgot-pass2">By Signing up I agree to the<a href="#">Terms of Services</a> and <a href="#">Privacy Policy</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="wrapper" id="wrapper"></div>
-            <div class="sign-up" id="sign-up-section">
-                <div class="welcome">
-                    <h2>Get Started</h2>
-                    <span><p class="register">Already have an account? <button class="sign-up-redirect" id="sign-in-redirect">Sign In</button><button class="sign-up-redirect2" id="sign-in-redirect2">Sign In</button></p>
-                    </span>    
-                    <div class="inputs inputs2">
-                        <label for="username" id="label1-2">Username</label><br>
-                        <input type="text" name="username2" id="username2" onfocus="labelTransition_1()" ><br>
-                        <label for="e-mail" id="e-mail_label">E-mail</label><br>
-                        <input type="e-mail" id="e-mail" onfocus=" labelTransition_3()"><br>
-                        <label for="password" id="label2-2" >Password</label><br>
-                        <input type="password" id="password2" onfocus="labelTransition_2()"  >
-                    </div>
-                    <div class="sign-in">
-                        <button class="sign-in-btn " id="sign-up-btn">Sign Up</button>
-                        <p id="forgot-pass2">By Signing up I agree to the<a href="#">Terms of Services</a> and <a href="#">Privacy Policy</a></p>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     <script src="script.js"></script>
     <script src="script2.js"></script>
