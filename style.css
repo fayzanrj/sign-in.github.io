@@ -46,8 +46,9 @@ body {
  .log-in {
     padding: 3rem 5rem;
     font-family: 'Open Sans', sans-serif;
-    /* overflow-x: hidden; */
+    overflow: hidden;
     z-index: 1;
+    /* background-color: red; */
 }
 
 .welcome h2 {
@@ -146,6 +147,7 @@ a {
     z-index: 1;
     transform: translateX(-15rem);
     transition: 800ms;
+    overflow: hidden;
 }
 
 #forgot-pass2{
