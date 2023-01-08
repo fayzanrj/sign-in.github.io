@@ -4,11 +4,11 @@ let label1 = document.getElementById('label1')
 let label2 = document.getElementById('label2')
 
 const labelTransition = () =>{
-    label1.style.marginTop = '0'
+    label1.style.marginTop = '0.5rem'
     label1.style.marginLeft = '0.1rem'
 }
 const labelTransition2 = () =>{
-    label2.style.marginTop = '0'
+    label2.style.marginTop = '0.5rem'
     label2.style.marginLeft = '0.1rem'
 }
 
@@ -39,6 +39,7 @@ signUpRedirectWidth.addEventListener('click' , ()=>{
     logIn.style.display = 'fixed';
     document.getElementById('forgot-pass').style.display = 'none'
 
+    document.title = 'Sign Up'
     document.getElementById('sign-up-btn').style.display = 'block'
     document.getElementById('forgot-pass2').style.display = 'block'
     signUp.style.width = '30rem';
@@ -46,31 +47,21 @@ signUpRedirectWidth.addEventListener('click' , ()=>{
     signUp.style.transform = 'Translate(0)';
 })
 
-if(signUpRedirectWidth.style.display == "none"){
-    location.reload();
-}
+
 let signUpRedirectHeight = document.getElementById('sign-up-redirect2')
 
 signUpRedirectHeight.addEventListener('click' , ()=>{
-    console.log('hi')
-    logIn.style.padding = '0 0 ';
+    logIn.style.padding = '0 5rem ';
     logIn.style.transform = 'TranslateY(15rem)';
     logIn.style.height = '0';
     logIn.style.display = 'fixed';
     document.getElementById('forgot-pass').style.display = 'none'
 
+    document.title = 'Sign Up'
     document.getElementById('sign-up-btn').style.display = 'block'
     document.getElementById('forgot-pass2').style.display = 'block'
     signUp.style.height = '25rem';
     signUp.style.padding = '1rem 5rem';
-    signUp.style.transform = 'Translate(0)';
+    signUp.style.transform = 'TranslateY(0)';
+    signUp.focus()
 })
-
-
-
-
-
-
-
-
-
