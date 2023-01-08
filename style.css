@@ -95,7 +95,7 @@ body {
     width: 100%;
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid rgb(89, 53, 89);
+    border-bottom: 2px solid rgb(0, 0, 0);
     margin-bottom: 1rem;
     outline: none;
     padding: .2rem .5rem;
@@ -142,7 +142,7 @@ a {
 .sign-up {
     /* background-color: chocolate; */
     width: 0;
-    /* padding: 3rem 5rem; */
+    /* padding: 0 5rem; */
     font-family: 'Open Sans', sans-serif;
     z-index: 1;
     transform: translateX(-15rem);
@@ -191,6 +191,10 @@ a {
     .wrapper{
         width: 9rem;
         background-size: 15rem;
+    }
+
+    .sign-up{
+        transform: translateY(15rem);
     }
 
     /*              L O G - I N           S E C T I O N         S T A R T I N G              */
