@@ -99,6 +99,7 @@ body {
     margin-bottom: 1rem;
     outline: none;
     padding: .2rem .5rem;
+    border-radius : 0;
 }
 .sign-in {
     margin-top: 1rem;
