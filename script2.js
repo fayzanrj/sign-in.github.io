@@ -48,7 +48,7 @@ let signUpRedirectWidth2 = document.getElementById('sign-in-redirect');
 signUpRedirectWidth2.addEventListener('click' , ()=>{
     
     signUp.style.padding = '3rem 0';
-    signUp.style.transform = 'TranslateX(-15rem)';
+    signUp.style.transform = 'TranslateX(-25rem)';
     signUp.style.width = '0';
     signUp.style.display = 'fixed';
     document.getElementById('forgot-pass2').style.display = 'none'
