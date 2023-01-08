@@ -231,7 +231,7 @@ a {
 
 @media screen and (max-height:670px) {
     .container{
-        padding: 0;
+        padding: 0 2rem;
         overflow-x: hidden;
     }
 
